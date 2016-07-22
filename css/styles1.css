@@ -1,0 +1,124 @@
+body {
+  background-color: #3A2A7C;
+  font-family: 'Varela Round', sans-serif !important;
+}
+.container {
+    margin-top: 15vh;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    background-color: white;
+    border-radius: 15px 10px 10px 15px;
+}
+.form-container {
+    -webkit-box-shadow: 0px 42px 153px -45px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 42px 153px -45px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 42px 153px -45px rgba(0, 0, 0, 0.75);
+}
+
+.form-left {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-image: url("/images/left-form.jpg");
+    background-blend-mode: multiply;
+    background-size: auto 500px;
+    background-repeat: no-repeat;
+    background-position: top;
+    color: white;
+    display: block;
+    height: 500px;
+    padding: 2em 3.5em;
+    border-radius: 10px 0px 0px 10px;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+}
+.form-left span {
+    font-size: 6em;
+}
+.form-left h6 {
+    font-size: 1.2em;
+}
+.form-left ul li
+{
+    list-style-type: none;
+    margin: 1.5em 0em;
+}
+.form-left ul strong{
+  font-size: 1.2em;
+}
+button {
+    color: white;
+    height: 3em;
+    border: 0px;
+    padding: .2em 1em;
+    margin-right: 1em;
+    border-radius: 3em;
+
+    -webkit-box-shadow: 0px 0px 70px -15px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 70px -15px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 70px -15px rgba(0,0,0,0.75);
+}
+button:focus {outline:0;}
+.fb{
+  background-color: #3b5998;
+}
+.fb:hover{
+  content: "facebook";
+}
+.tw{
+  background-color: #55acee;
+}
+.lg{
+  float: right;
+  width: 10em;
+  background-color: #77B272;
+  margin-top: .5em;
+  margin-right: 0px;
+}
+input{
+  border: 0px;
+  border-bottom: 2px #e3e3e3 solid;
+  box-shadow: none!important;
+  border-radius: 0px !important;
+  transition: all .5s ease !important;
+}
+input:focus{
+  border-bottom: 2px #212121 solid!important;
+  }
+.form-right{
+  padding: 2em 4.5em;
+}
+.form-right a{
+  text-decoration: none;
+}
+.form-right h3{
+  margin-bottom: .7em;
+  font-size: 2.2em;
+}
+.form-right p{
+  display: block;
+  margin-bottom: 1.5em;
+}
+.form-right .form-group{
+  margin: 1.5em 0em;
+}
+.additional-opts{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.additional-opts a{
+color: #886FED;
+text-decoration: none;
+opacity: .7;
+transition: all .3 ease;
+}
+.additional-opts a:hover{
+color: #886FED;
+opacity: 1;
+}
