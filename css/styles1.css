@@ -1,9 +1,9 @@
 body {
   background-color: #3A2A7C;
   font-family: 'Varela Round', sans-serif !important;
+  padding: 5em 0em;
 }
 .container {
-    margin-top: 15vh;
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
@@ -121,4 +121,9 @@ transition: all .3 ease;
 .additional-opts a:hover{
 color: #886FED;
 opacity: 1;
+}
+@media (max-width:768px) {
+  .form-left{
+    border-radius: 10px 10px 0px 0px;
+  }
 }
