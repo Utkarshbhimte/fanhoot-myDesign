@@ -11,7 +11,7 @@ html, body {
 
 body .hero {
   color: white;
-  min-height: 73vh;
+  height: 70vh;
   background-color: black;
   background-image: url("../images/bg.jpg");
   background-repeat: no-repeat;
@@ -36,8 +36,11 @@ body .hero .container hr {
 }
 
 body .hero .container span {
+  font-size: 16px;
   display: block;
   margin: 0px;
+  line-height: 15px;
+  margin-bottom: 5px;
 }
 
 body .hero .container a.btn {
@@ -82,4 +85,16 @@ body .grid-cards .container h3 {
   margin-bottom: 0px;
   color: #2f2f51;
   font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  body .hero {
+    height: 100vh;
+  }
+  body .grid-cards {
+    padding-top: 10vh;
+  }
+  body .grid-cards .container .col-md-4 {
+    margin-bottom: 3em;
+  }
 }

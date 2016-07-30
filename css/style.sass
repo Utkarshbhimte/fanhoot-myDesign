@@ -11,7 +11,7 @@ html, body
 body
   .hero
     color: white
-    min-height: 73vh
+    height: 70vh
     background:
       color: black
       image: url('../images/bg.jpg')
@@ -29,8 +29,11 @@ body
       hr
         margin: 0px
       span
+        font-size: 16px
         display: block
         margin: 0px
+        line-height: 15px
+        margin-bottom: 5px
       a.btn
         display: block
         margin-left: auto
@@ -67,3 +70,13 @@ body
         margin-bottom: 0px
         color: rgb(47, 47, 81)
         font-weight: 700
+
+@media (max-width: 768px)
+  body
+    .hero
+      height: 100vh
+    .grid-cards
+      padding-top: 10vh
+      .container
+        .col-md-4
+          margin-bottom: 3em
