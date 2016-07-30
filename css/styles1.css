@@ -22,7 +22,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.2);
-    background-image: url("/images/left-form.jpg");
+    background-image: url("../images/left-form.jpg");
     background-blend-mode: multiply;
     background-size: auto 500px;
     background-repeat: no-repeat;
