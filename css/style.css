@@ -153,9 +153,48 @@ body #myModal .container {
   width: 100%;
 }
 
+body #myModal .container .col-md-4 {
+  text-align: center;
+}
+
+body #myModal .container .col-md-4 a {
+  padding: 10px 30px;
+  border-radius: 10em;
+  color: white !important;
+}
+
+body #myModal .container .col-md-4 a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body #myModal .container .col-md-4:nth-child(1) a {
+  background-color: #c71610;
+}
+
+body #myModal .container .col-md-4:nth-child(2) a {
+  background-color: #3b5998;
+}
+
+body #myModal .container .col-md-4:nth-child(3) a {
+  background-color: #55acee;
+}
+
 body #myModal .container button {
   margin-top: 10px;
   width: 100px;
+}
+
+body #myModal .container input {
+  border: 0px;
+  border-bottom: 2px #e3e3e3 solid;
+  box-shadow: none !important;
+  border-radius: 0px !important;
+  transition: all .5s ease !important;
+}
+
+body #myModal .container input:focus {
+  border-bottom: 2px #212121 solid !important;
 }
 
 body .grid-cards {

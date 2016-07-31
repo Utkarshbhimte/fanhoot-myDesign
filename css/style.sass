@@ -118,9 +118,38 @@ body
     text-align: left
     .container
       width: 100%
+      .col-md-4
+        text-align: center
+        a
+          padding: 10px 30px
+          border-radius: 10em
+          color: white !important
+        a:hover
+          text-decoration: none
+          cursor: pointer
+      .col-md-4:nth-child(1)
+        a
+          background-color: rgb(199,22,16)
+      .col-md-4:nth-child(2)
+        a
+          background-color: #3b5998
+      .col-md-4:nth-child(3)
+        a
+          background-color: #55acee
+
+
       button
         margin-top: 10px
         width: 100px
+      input
+        border: 0px
+        border-bottom: 2px #e3e3e3 solid
+        box-shadow: none!important
+        border-radius: 0px !important
+        transition: all .5s ease !important
+      input:focus
+        border-bottom: 2px #212121 solid!important
+
   .grid-cards
     padding: 5vh 0px 0px 0px
     color: rgb(47, 47, 81) !important

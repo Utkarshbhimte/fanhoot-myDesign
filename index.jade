@@ -53,13 +53,17 @@ html(lang='en')
                 h4#myModalLabel.modal-title Login
               .modal-body
                 .container
+                  .row
+                    .col-md-4
+                      a Gmail
+                    .col-md-4
+                      a Facebook
+                    .col-md-4
+                      a Twitter
                   form
                     .form-group
-                      label(for='exampleInputEmail1') Email address
                       input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder='Enter email')
-                      small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
                     .form-group
-                      label(for='exampleInputPassword1') Password
                       input#exampleInputPassword1.form-control(type='password', placeholder='Password')
                   a.btn(type='button').pull-right Login
 
