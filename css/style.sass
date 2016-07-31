@@ -1,4 +1,23 @@
-@import 'https://fonts.googleapis.com/css?family=Dosis:300,400,700'
+@font-face
+  font-family: "BebasNeue"
+  src: url("../fonts/BebasNeue-Regular.otf") format('truetype')
+  src: url("../fonts/BebasNeue-Regular.ttf") format('truetype')
+
+@font-face
+  font-family: "Montserrat"
+  src: url("../fonts/Montserrat-Light.otf") format('truetype')
+  font-weight: 200
+
+@font-face
+  font-family: "Montserrat"
+  src: url("../fonts/Montserrat-Regular.otf") format('truetype')
+  font-weight: 400
+
+@font-face
+  font-family: "Montserrat"
+  src: url("../fonts/Montserrat-UltraLight.otf") format('truetype')
+  font-weight: 100
+
 
 html, body
   height: 100vh
@@ -6,7 +25,7 @@ html, body
   padding: 0px
   margin: 0px
   background-color: #f5f5f5
-  font-family: 'Dosis', sans-serif
+  font-family: "Montserrat"
   text-align: center
 body
   .hero
@@ -16,38 +35,47 @@ body
       color: black
       image: url('../images/bg.jpg')
       repeat: no-repeat
-      position: center
+      position: center -15vh
       size: cover
+      attachment: fixed
     .container
       position: relative
-      top: 10vh
-      max-width: 50vw
+      max-width: 60vw
       h1
-        margin: 0px
+        margin-bottom: 0px
         text-transform: uppercase
-        font-weight: 700
+        font-family: "BebasNeue"
+        font-size: 86px
+        line-height: 70px
       hr
-        margin: 0px
-      span
-        font-size: 16px
+        width: 50vw
+        display: block
+        margin: 5px auto
+      p
+        font-size: 24px
         display: block
         margin: 0px
-        line-height: 15px
-        margin-bottom: 5px
+        line-height: 26px
+        font-weight: 200
+        text-align: center
       a.btn
         display: block
         margin-left: auto
         margin-right: auto
-        margin-top: 1.9em
+        margin-top: 2.8em
         background-color: white
-        padding: .3em
+        padding: .1em
         color: black
-        height: 2.2em
+        height: 2.8em
         font-size: 1.2em
-        width: 6em
+        width: 10em
         border-radius: 10em
+        font-weight: 200
+        line-height: 2.4em
 
     nav
+      display: flex
+      align-items: center
       a.navbar-brand
         width: 200px
         height: 100px
@@ -56,9 +84,37 @@ body
           image: url('../images/brand2.png')
           repeat: no-repeat
           position: center
+      ul
+        display: flex
+        float: right
+        margin-right: 5vw
+        margin-left: auto
+        .vert-hr
+          height: 200% !important
+          width: 1px
+          background-color: white
+          color: white
+        li
+          list-style: none
+          padding: 10px 15px
+          font-size: 24px
+          transition: all .3s ease
+          a
+            text-decoration: none
+            color: white
+            cursor: pointer
+        li:nth-child(1)
+          border-right: 1px white solid
+        li:nth-child(3)
+          display: none
+        li:hover
+          border-bottom: 5px white solid
+          transform: translateY(2px)
+      .mobile-nav-trigger
+        display: none
 
   .grid-cards
-    padding: 2vh 0px
+    padding: 5vh 0px 0px 0px
     color: rgb(47, 47, 81) !important
     .container
       display: block
@@ -69,12 +125,39 @@ body
       h3
         margin-bottom: 0px
         color: rgb(47, 47, 81)
-        font-weight: 700
+        font-weight: 400
+      p
+        font-weight: 100
+
 
 @media (max-width: 768px)
   body
     .hero
-      height: 100vh
+      height: 90vh
+      background-position: top center
+      .container
+        top: 10vh
+        max-width: 90vw
+        h1
+          font-size: 10vw
+          line-height: 10vw
+        p
+          font-size: 4vw
+          line-height: 4vw
+    nav
+      ul
+        margin-left: auto
+        margin-right: 5vw!important
+        left: 0px
+        li:nth-child(2), li:nth-child(1)
+          display:none
+        li:nth-child(3)
+          display:inherit!important
+        li:hover
+          border-bottom: 0px !important
+      .glyphicon-align-justify
+        position: relative
+        left: 0px
     .grid-cards
       padding-top: 10vh
       .container
