@@ -41,7 +41,7 @@ html(lang='en')
           br 
           | All from a fan perspective.
           // Button trigger modal
-        a.btn.btn-primary.btn-lg(type='button', data-toggle='modal', data-target='#myModal')
+        a.btn(type='button', data-toggle='modal', data-target='#myModal')
           | Get Started
         // Modal
         #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
@@ -61,7 +61,7 @@ html(lang='en')
                     .form-group
                       label(for='exampleInputPassword1') Password
                       input#exampleInputPassword1.form-control(type='password', placeholder='Password')
-                  button.btn.btn-primary(type='button').pull-right Login
+                  a.btn(type='button').pull-right Login
 
     .grid-cards
       .container.row
