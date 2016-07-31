@@ -27,9 +27,9 @@ html(lang='en')
         a.navbar-brand
         ul
           li
-            a(type='button', data-toggle='modal', data-target='#myModal') Login
+            a(type='button', data-toggle='modal', data-target='#LoginModal') Login
           li
-            a(type='button', data-toggle='modal', data-target='#myModal')
+            a(type='button', data-toggle='modal', data-target='#LoginModal')
               span.glyphicon.glyphicon-align-justify
       
       .container
@@ -41,11 +41,12 @@ html(lang='en')
           br 
           | All from a fan perspective.
           // Button trigger modal
-        a.btn(type='button', data-toggle='modal', data-target='#myModal')
+        a.btn(type='button', data-toggle='modal', data-target='#RegisterModal')
           | Get Started
-        // Modal
-        #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-          .modal-dialog(role='document')
+
+        // Modal for Login
+        #LoginModal.modal.fade.bd-example-modal-sm(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+          .modal-dialog.modal-sm(role='document')
             .modal-content
               .modal-header
                 button.close(type='button', data-dismiss='modal', aria-label='Close')
@@ -53,19 +54,39 @@ html(lang='en')
                 h4#myModalLabel.modal-title Login
               .modal-body
                 .container
-                  .row
-                    .col-md-4
-                      a Gmail
-                    .col-md-4
-                      a Facebook
-                    .col-md-4
-                      a Twitter
                   form
                     .form-group
-                      input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder='Enter email')
+                      input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder='Your email')
                     .form-group
                       input#exampleInputPassword1.form-control(type='password', placeholder='Password')
-                  a.btn(type='button').pull-right Login
+                    a.btn(type='button') Login
+                    hr.other-hr
+                    span OR
+                    hr.other-hr
+                  a.btn.fb Sign in using Facebook
+                  
+        // Modal for Register
+        #RegisterModal.modal.fade.bd-example-modal-sm(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+          .modal-dialog.modal-sm(role='document')
+            .modal-content
+              .modal-header
+                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                  span(aria-hidden='true') close
+                h4#myModalLabel.modal-title Register
+              .modal-body
+                .container
+                  form
+                    .form-group
+                      input#exampleInputName.form-control(type='text', aria-describedby='textHelp', placeholder='Your Name')
+                    .form-group
+                      input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder='Your Email')
+                    .form-group
+                      input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+                    a.btn(type='button') Register
+                    hr.other-hr
+                    span OR
+                    hr.other-hr
+                  a.btn.fb Sign in using Facebook                
 
     .grid-cards
       .container.row

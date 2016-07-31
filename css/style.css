@@ -77,12 +77,12 @@ body .hero .container a.btn {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0.8em;
+  margin-top: 2em;
   padding: .1em;
   color: black;
   height: 2.8em;
+  width: 12em;
   font-size: 1.2em;
-  width: 10em;
   border-radius: 10em;
   font-weight: 200;
   line-height: 2.4em;
@@ -144,48 +144,35 @@ body .hero nav .mobile-nav-trigger {
   display: none;
 }
 
-body #myModal {
+body #LoginModal, body #RegisterModal {
   color: black;
   text-align: left;
 }
 
-body #myModal .container {
+body #LoginModal .container, body #RegisterModal .container {
   width: 100%;
 }
 
-body #myModal .container .col-md-4 {
-  text-align: center;
-}
-
-body #myModal .container .col-md-4 a {
-  padding: 10px 30px;
-  border-radius: 10em;
-  color: white !important;
-}
-
-body #myModal .container .col-md-4 a:hover {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-body #myModal .container .col-md-4:nth-child(1) a {
-  background-color: #c71610;
-}
-
-body #myModal .container .col-md-4:nth-child(2) a {
+body #LoginModal .container a.btn.fb, body #RegisterModal .container a.btn.fb {
   background-color: #3b5998;
+  width: auto;
+  font-size: 16px;
 }
 
-body #myModal .container .col-md-4:nth-child(3) a {
-  background-color: #55acee;
+body #LoginModal .container .other-hr, body #RegisterModal .container .other-hr {
+  width: 35%;
+  display: inline-block;
+  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
-body #myModal .container button {
+body #LoginModal .container button, body #RegisterModal .container button {
   margin-top: 10px;
   width: 100px;
 }
 
-body #myModal .container input {
+body #LoginModal .container input, body #RegisterModal .container input {
   border: 0px;
   border-bottom: 2px #e3e3e3 solid;
   box-shadow: none !important;
@@ -193,7 +180,7 @@ body #myModal .container input {
   transition: all .5s ease !important;
 }
 
-body #myModal .container input:focus {
+body #LoginModal .container input:focus, body #RegisterModal .container input:focus {
   border-bottom: 2px #212121 solid !important;
 }
 

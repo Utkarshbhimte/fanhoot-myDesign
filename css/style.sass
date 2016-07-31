@@ -64,12 +64,12 @@ body
         display: block
         margin-left: auto
         margin-right: auto
-        margin-top: 0.8em
+        margin-top: 2em
         padding: .1em
         color: black
         height: 2.8em
+        width: 12em
         font-size: 1.2em
-        width: 10em
         border-radius: 10em
         font-weight: 200
         line-height: 2.4em
@@ -113,31 +113,21 @@ body
           display: none
       .mobile-nav-trigger
         display: none
-  #myModal
+  #LoginModal, #RegisterModal
     color: black
     text-align: left
     .container
       width: 100%
-      .col-md-4
-        text-align: center
-        a
-          padding: 10px 30px
-          border-radius: 10em
-          color: white !important
-        a:hover
-          text-decoration: none
-          cursor: pointer
-      .col-md-4:nth-child(1)
-        a
-          background-color: rgb(199,22,16)
-      .col-md-4:nth-child(2)
-        a
-          background-color: #3b5998
-      .col-md-4:nth-child(3)
-        a
-          background-color: #55acee
-
-
+      a.btn.fb
+        background-color: #3b5998
+        width: auto
+        font-size: 16px
+      .other-hr
+        width: 35%
+        display: inline-block
+        margin: 10px
+        margin-top: 20px
+        margin-bottom: 5px
       button
         margin-top: 10px
         width: 100px
@@ -149,7 +139,6 @@ body
         transition: all .5s ease !important
       input:focus
         border-bottom: 2px #212121 solid!important
-
   .grid-cards
     padding: 5vh 0px 0px 0px
     color: rgb(47, 47, 81) !important
