@@ -28,7 +28,7 @@ html, body {
   padding: 0px;
   margin: 0px;
   background-color: #f5f5f5;
-  font-family: "Montserrat";
+  font-family: "Montserrat" !important;
   text-align: center;
 }
 
@@ -72,11 +72,11 @@ body .hero .container p {
 }
 
 body .hero .container a.btn {
+  color: white !important;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2.8em;
-  background-color: white;
+  margin-top: 2.2em;
   padding: .1em;
   color: black;
   height: 2.8em;
@@ -129,20 +129,30 @@ body .hero nav ul li a {
 }
 
 body .hero nav ul li:nth-child(1) {
-  border-right: 1px white solid;
+  border: 1px white solid;
+  border-radius: 10px;
 }
 
-body .hero nav ul li:nth-child(3) {
+body .hero nav ul li:nth-child(2) {
   display: none;
-}
-
-body .hero nav ul li:hover {
-  border-bottom: 5px white solid;
-  transform: translateY(2px);
 }
 
 body .hero nav .mobile-nav-trigger {
   display: none;
+}
+
+body #myModal {
+  color: black;
+  text-align: left;
+}
+
+body #myModal .container {
+  width: 100%;
+}
+
+body #myModal .container button {
+  margin-top: 10px;
+  width: 100px;
 }
 
 body .grid-cards {
@@ -192,10 +202,10 @@ body .grid-cards .container p {
     margin-right: 5vw !important;
     left: 0px;
   }
-  body nav ul li:nth-child(2), body nav ul li:nth-child(1) {
+  body nav ul li:nth-child(1) {
     display: none;
   }
-  body nav ul li:nth-child(3) {
+  body nav ul li:nth-child(2) {
     display: inherit !important;
   }
   body nav ul li:hover {
