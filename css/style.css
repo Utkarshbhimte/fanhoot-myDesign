@@ -129,6 +129,7 @@ body .hero .down-arrow .glyphicon-menu-down {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  text-decoration: none;
 }
 
 body .hero nav {
@@ -173,6 +174,7 @@ body .hero nav ul li a {
   display: block;
   line-height: 45px;
   transition: .3s all ease-in-out;
+  font-size: 16px !important;
   box-shadow: 0px 0px 79px -10px rgba(0, 0, 0, 0.75);
 }
 
@@ -241,28 +243,29 @@ body #LoginModal .container input:focus, body #RegisterModal .container input:fo
   border-bottom: 2px #212121 solid !important;
 }
 
-body .grid-cards {
+body #grid-cards {
   padding: 10vh 0px;
   color: #2f2f51 !important;
+  min-height: 61vh;
 }
 
-body .grid-cards .container {
+body #grid-cards .container {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-body .grid-cards .container img {
+body #grid-cards .container img {
   height: 120px;
 }
 
-body .grid-cards .container h3 {
+body #grid-cards .container h3 {
   margin-bottom: 0px;
   color: #2f2f51;
   font-weight: 400;
 }
 
-body .grid-cards .container p {
+body #grid-cards .container p {
   font-weight: 100;
 }
 
@@ -366,13 +369,13 @@ body footer .container h4 {
     position: relative;
     left: 0px;
   }
-  body .grid-cards {
+  body #grid-cards {
     padding-top: 10vh;
   }
-  body .grid-cards .container {
+  body #grid-cards .container {
     width: 90vw;
   }
-  body .grid-cards .container .col-md-4 {
+  body #grid-cards .container .col-md-4 {
     margin-bottom: 3em;
   }
   body .ele-left, body .ele-right {

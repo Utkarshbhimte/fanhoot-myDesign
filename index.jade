@@ -41,7 +41,7 @@ html(lang='en')
         a.btn2(type='button', data-toggle='modal', data-target='#RegisterModal')
           | Join Us
       .down-arrow
-        span.glyphicon.glyphicon-menu-down
+        a(href="#grid-cards").glyphicon.glyphicon-menu-down
         // Modal for Login
         #LoginModal.modal.fade.bd-example-modal-sm(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
           .modal-dialog.modal-sm(role='document')
@@ -88,9 +88,9 @@ html(lang='en')
                       hr.other-hr 
                       span OR
                       hr.other-hr
-                  a.btn.fb Sign in using Facebook                
+                  a.btn.fb Sign up using Facebook                
 
-    .grid-cards
+    #grid-cards
       .container.row
         .col-md-4
           img(src='images/share.svg')
