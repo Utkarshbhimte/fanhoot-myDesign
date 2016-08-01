@@ -270,7 +270,7 @@ body footer {
   text-align: center;
   padding-top: 5vh;
   padding-bottom: 3vh;
-  color: white !important;
+  color: white;
   background-color: #212121;
 }
 
@@ -294,7 +294,7 @@ body footer .container .ele-left a {
 
 body footer .container .ele-left a:hover {
   background-color: white;
-  color: black;
+  color: black !important;
 }
 
 body footer .container .ele-right {
