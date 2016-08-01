@@ -85,7 +85,7 @@ body
         height: 2.8em
         width: 12em
         font-size: 1.2em
-        border-radius: 10em
+        border-radius: 10px
         font-weight: 200
         line-height: 2.4em
         background-color: rgb(47, 47, 81)
@@ -140,6 +140,7 @@ body
       top: 0vh
       a.btn
         background-color: #e21851
+        width: 100%
       a.btn.fb
         background-color: #3b5998
         width: auto
@@ -179,11 +180,42 @@ body
       p
         font-weight: 100
   footer
+    margin-top: 5vh
     text-align: center
-    padding: 5vh auto
-    a
-      text-decoration: none
-      color: #818181
+    padding-top: 5vh
+    padding-bottom: 3vh
+    background-color: #000
+    .container
+      width: 70vw
+      .ele-left
+        display: flex
+        justify-content: space-between
+        align-items: stretch
+        a
+          border-left: 1px solid white
+          width: 100%
+          padding: .5em 1em
+          transition: all .3s ease-in-out
+        a:hover
+          background-color: white
+          color: black
+      .ele-right
+        display: flex
+        justify-content: space-between
+      a
+        display: inline-block
+        text-decoration: none
+        color: #818181
+
+
+      hr
+        margin-top: 0px
+      .footer-social
+        display: block
+      h4
+        text-align: center
+        margin-bottom: 0px
+        margin-top: 2vh
 .modal-content
   background-color: #f5f5f5
 @media (max-width: 768px)

@@ -102,7 +102,7 @@ body .hero .container a.btn {
   height: 2.8em;
   width: 12em;
   font-size: 1.2em;
-  border-radius: 10em;
+  border-radius: 10px;
   font-weight: 200;
   line-height: 2.4em;
   background-color: #2f2f51;
@@ -177,6 +177,7 @@ body #LoginModal .container, body #RegisterModal .container {
 
 body #LoginModal .container a.btn, body #RegisterModal .container a.btn {
   background-color: #e21851;
+  width: 100%;
 }
 
 body #LoginModal .container a.btn.fb, body #RegisterModal .container a.btn.fb {
@@ -237,13 +238,58 @@ body .grid-cards .container p {
 }
 
 body footer {
+  margin-top: 5vh;
   text-align: center;
-  padding: 5vh auto;
+  padding-top: 5vh;
+  padding-bottom: 3vh;
+  background-color: #000;
 }
 
-body footer a {
+body footer .container {
+  width: 70vw;
+}
+
+body footer .container .ele-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+body footer .container .ele-left a {
+  border-left: 1px solid white;
+  width: 100%;
+  padding: .5em 1em;
+  transition: all .3s ease-in-out;
+}
+
+body footer .container .ele-left a:hover {
+  background-color: white;
+  color: black;
+}
+
+body footer .container .ele-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+body footer .container a {
+  display: inline-block;
   text-decoration: none;
   color: #818181;
+}
+
+body footer .container hr {
+  margin-top: 0px;
+}
+
+body footer .container .footer-social {
+  display: block;
+}
+
+body footer .container h4 {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 2vh;
 }
 
 .modal-content {
