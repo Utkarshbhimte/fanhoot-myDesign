@@ -247,6 +247,8 @@ body #grid-cards {
   padding: 10vh 0px;
   color: #2f2f51 !important;
   min-height: 61vh;
+  display: flex;
+  align-items: center;
 }
 
 body #grid-cards .container {
