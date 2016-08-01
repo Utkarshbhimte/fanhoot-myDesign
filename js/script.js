@@ -12,8 +12,8 @@ $(document).ready(function(){
             }, 1000);
             return false;
         }
-    }
-});
+      }
+  });
 
   $('#LoginModal, #RegisterModal').on('shown.bs.modal', function () {
     console.log("yes");
