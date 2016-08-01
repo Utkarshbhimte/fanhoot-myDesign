@@ -116,10 +116,18 @@ body .hero .hero-content a.btn {
   background-color: #2f2f51;
 }
 
+body .hero .down-arrow {
+  position: absolute;
+  width: 100%;
+  bottom: 5vh;
+}
+
 body .hero .down-arrow span {
-  position: relative;
+  display: block;
+  font-size: 2em;
   justify-content: center;
-  bottom: 10vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body .hero nav {
@@ -227,7 +235,7 @@ body #LoginModal .container input:focus, body #RegisterModal .container input:fo
 }
 
 body .grid-cards {
-  padding: 5vh 0px;
+  padding: 10vh 0px;
   color: #2f2f51 !important;
 }
 
@@ -238,7 +246,7 @@ body .grid-cards .container {
 }
 
 body .grid-cards .container img {
-  height: 70px;
+  height: 120px;
 }
 
 body .grid-cards .container h3 {
@@ -256,13 +264,7 @@ body footer {
   padding-top: 5vh;
   padding-bottom: 3vh;
   color: white !important;
-  background-color: rgba(0, 0, 0, 0.4);
-  background-image: url("../images/bg2.jpg");
-  background-repeat: no-repeat;
-  background-position: center -15vh;
-  background-size: cover;
-  background-attachment: fixed;
-  background-blend-mode: multiply;
+  background-color: #212121;
 }
 
 body footer .container {
@@ -319,11 +321,11 @@ body footer .container h4 {
 
 @media (max-width: 768px) {
   body .hero {
-    height: 90vh;
+    height: 100vh;
     background-position: top center;
   }
   body .hero .container {
-    top: 10vh;
+    top: 20vh;
     max-width: 90vw;
   }
   body .hero .container h1 {
@@ -360,7 +362,19 @@ body footer .container h4 {
   body .grid-cards {
     padding-top: 10vh;
   }
+  body .grid-cards .container {
+    width: 90vw;
+  }
   body .grid-cards .container .col-md-4 {
     margin-bottom: 3em;
+  }
+  body .ele-left, body .ele-right {
+    flex-direction: column;
+  }
+  body .ele-right {
+    margin-bottom: 2vh;
+  }
+  body .ele-right span {
+    text-align: left;
   }
 }
