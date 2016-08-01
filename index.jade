@@ -32,7 +32,7 @@ html(lang='en')
             a(type='button', data-toggle='modal', data-target='#LoginModal')
               span.glyphicon.glyphicon-align-justify
       
-      .container
+      .container.hero-content
         h1.main-title
           strong For the love of the Game
         hr
@@ -40,7 +40,8 @@ html(lang='en')
           // Button trigger modal
         a.btn2(type='button', data-toggle='modal', data-target='#RegisterModal')
           | Join Us
-
+      .down-arrow
+        span.glyphicon.glyphicon-menu-down
         // Modal for Login
         #LoginModal.modal.fade.bd-example-modal-sm(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
           .modal-dialog.modal-sm(role='document')
@@ -112,7 +113,6 @@ html(lang='en')
               a terms of use
               a privacy policy
               a community guidelines
-              a FAQs
               a contact us 
           hr
           .ele-right

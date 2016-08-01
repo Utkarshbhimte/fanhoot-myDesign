@@ -31,7 +31,7 @@ a
 body
   .hero
     color: white
-    height: 70vh
+    height: 100vh
     background:
       color: transparentize(black, .6)
       image: url('../images/bg2.jpg')
@@ -43,6 +43,8 @@ body
     .container
       position: relative
       max-width: 60vw
+    .hero-content
+      top: 15vh
       h1
         margin-bottom: 0px
         text-transform: uppercase
@@ -91,6 +93,11 @@ body
         font-weight: 200
         line-height: 2.4em
         background-color: rgb(47, 47, 81)
+    .down-arrow
+      span
+        position: relative
+        justify-content: center
+        bottom: 10vh
 
     nav
       display: flex
