@@ -27,17 +27,20 @@ html, body
   background-color: #f5f5f5
   font-family: "Montserrat" !important
   text-align: center
+a
+  cursor: pointer
 body
   .hero
     color: white
     height: 70vh
     background:
-      color: black
-      image: url('../images/bg.jpg')
+      color: transparentize(black, .6)
+      image: url('../images/bg2.jpg')
       repeat: no-repeat
       position: center -15vh
       size: cover
       attachment: fixed
+    background-blend-mode: multiply
     .container
       position: relative
       max-width: 60vw
@@ -165,7 +168,7 @@ body
       input:focus
         border-bottom: 2px #212121 solid!important
   .grid-cards
-    padding: 5vh 0px 0px 0px
+    padding: 5vh 0px
     color: rgb(47, 47, 81) !important
     .container
       display: block
@@ -180,11 +183,18 @@ body
       p
         font-weight: 100
   footer
-    margin-top: 5vh
     text-align: center
     padding-top: 5vh
     padding-bottom: 3vh
-    background-color: #000
+    color: white !important
+    background:
+      color: transparentize(black, .6)
+      image: url('../images/bg2.jpg')
+      repeat: no-repeat
+      position: center -15vh
+      size: cover
+      attachment: fixed
+    background-blend-mode: multiply
     .container
       width: 70vw
       .ele-left
@@ -195,6 +205,7 @@ body
           border-left: 1px solid white
           width: 100%
           padding: .5em 1em
+          color: white
           transition: all .3s ease-in-out
         a:hover
           background-color: white
@@ -205,9 +216,7 @@ body
       a
         display: inline-block
         text-decoration: none
-        color: #818181
-
-
+        color: white
       hr
         margin-top: 0px
       .footer-social

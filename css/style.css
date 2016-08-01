@@ -32,15 +32,20 @@ html, body {
   text-align: center;
 }
 
+a {
+  cursor: pointer;
+}
+
 body .hero {
   color: white;
   height: 70vh;
-  background-color: black;
-  background-image: url("../images/bg.jpg");
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url("../images/bg2.jpg");
   background-repeat: no-repeat;
   background-position: center -15vh;
   background-size: cover;
   background-attachment: fixed;
+  background-blend-mode: multiply;
 }
 
 body .hero .container {
@@ -213,7 +218,7 @@ body #LoginModal .container input:focus, body #RegisterModal .container input:fo
 }
 
 body .grid-cards {
-  padding: 5vh 0px 0px 0px;
+  padding: 5vh 0px;
   color: #2f2f51 !important;
 }
 
@@ -238,11 +243,17 @@ body .grid-cards .container p {
 }
 
 body footer {
-  margin-top: 5vh;
   text-align: center;
   padding-top: 5vh;
   padding-bottom: 3vh;
-  background-color: #000;
+  color: white !important;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url("../images/bg2.jpg");
+  background-repeat: no-repeat;
+  background-position: center -15vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
 }
 
 body footer .container {
@@ -259,6 +270,7 @@ body footer .container .ele-left a {
   border-left: 1px solid white;
   width: 100%;
   padding: .5em 1em;
+  color: white;
   transition: all .3s ease-in-out;
 }
 
@@ -275,7 +287,7 @@ body footer .container .ele-right {
 body footer .container a {
   display: inline-block;
   text-decoration: none;
-  color: #818181;
+  color: white;
 }
 
 body footer .container hr {
