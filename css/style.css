@@ -86,7 +86,7 @@ body .hero .container a.btn {
   border-radius: 10em;
   font-weight: 200;
   line-height: 2.4em;
-  background-color: #e21851;
+  background-color: #2f2f51;
 }
 
 body .hero nav {
@@ -154,6 +154,10 @@ body #LoginModal, body #RegisterModal {
 body #LoginModal .container, body #RegisterModal .container {
   width: 100%;
   top: 0vh;
+}
+
+body #LoginModal .container a.btn, body #RegisterModal .container a.btn {
+  background-color: #e21851;
 }
 
 body #LoginModal .container a.btn.fb, body #RegisterModal .container a.btn.fb {
