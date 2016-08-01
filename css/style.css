@@ -33,6 +33,7 @@ html, body {
 
 a {
   cursor: pointer;
+  color: white !important;
 }
 
 body .hero {
@@ -122,7 +123,7 @@ body .hero .down-arrow {
   bottom: 5vh;
 }
 
-body .hero .down-arrow span {
+body .hero .down-arrow .glyphicon-menu-down {
   display: block;
   font-size: 2em;
   justify-content: center;
@@ -171,6 +172,12 @@ body .hero nav ul li a {
   height: 45px;
   display: block;
   line-height: 45px;
+  transition: .3s all ease-in-out;
+  box-shadow: 0px 0px 79px -10px rgba(0, 0, 0, 0.75);
+}
+
+body .hero nav ul li:hover {
+  transform: scale(1.1) translateY(-2px);
 }
 
 body .hero nav ul li:nth-child(1) {
@@ -204,7 +211,7 @@ body #LoginModal .container a.btn, body #RegisterModal .container a.btn {
 
 body #LoginModal .container a.btn.fb, body #RegisterModal .container a.btn.fb {
   background-color: #3b5998;
-  width: auto;
+  width: 100%;
   font-size: 16px;
   margin: 1em auto;
 }
@@ -340,7 +347,7 @@ body footer .container h4 {
     top: 0vh;
   }
   body .hero #LoginModal .container a.btn, body .hero #RegisterModal .container a.btn {
-    width: auto;
+    width: 100%;
   }
   body .hero #LoginModal .container .or-divider, body .hero #RegisterModal .container .or-divider {
     display: flex;
