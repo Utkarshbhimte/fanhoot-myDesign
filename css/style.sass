@@ -36,7 +36,7 @@ body
       color: transparentize(black, .6)
       image: url('../images/bg2.jpg')
       repeat: no-repeat
-      position: center -15vh
+      position: center
       size: cover
       attachment: fixed
     background-blend-mode: multiply
@@ -158,6 +158,15 @@ body
     .container
       width: 100%
       top: 0vh
+      .forgot-span
+        display: block
+        text-align: right
+        margin-bottom: 5px
+        color: #919191 !important
+        text-decoration: none
+        transition: all .3s ease-in-out
+      .forgot-span:hover
+        color: #212121 !important
       a.btn
         background-color: #e21851
         width: 100%
@@ -286,9 +295,16 @@ body
         width: 90vw
         .col-md-4
           margin-bottom: 3em
-    .ele-left, .ele-right
-      flex-direction: column
-    .ele-right
-      margin-bottom: 2vh
-      span
-        text-align: left
+    footer
+      .ele-left, .ele-right
+        flex-direction: column
+      .ele-right
+        margin-bottom: 2vh
+        span
+          text-align: left
+      .ele-left
+        a
+          border-left: 0px !important
+          border-bottom: 0px !important
+      hr
+        margin-top: 10px !important

@@ -42,7 +42,7 @@ body .hero {
   background-color: rgba(0, 0, 0, 0.4);
   background-image: url("../images/bg2.jpg");
   background-repeat: no-repeat;
-  background-position: center -15vh;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
   background-blend-mode: multiply;
@@ -204,6 +204,19 @@ body #LoginModal, body #RegisterModal {
 body #LoginModal .container, body #RegisterModal .container {
   width: 100%;
   top: 0vh;
+}
+
+body #LoginModal .container .forgot-span, body #RegisterModal .container .forgot-span {
+  display: block;
+  text-align: right;
+  margin-bottom: 5px;
+  color: #919191 !important;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+
+body #LoginModal .container .forgot-span:hover, body #RegisterModal .container .forgot-span:hover {
+  color: #212121 !important;
 }
 
 body #LoginModal .container a.btn, body #RegisterModal .container a.btn {
@@ -388,13 +401,20 @@ body footer .container h4 {
   body #grid-cards .container .col-md-4 {
     margin-bottom: 3em;
   }
-  body .ele-left, body .ele-right {
+  body footer .ele-left, body footer .ele-right {
     flex-direction: column;
   }
-  body .ele-right {
+  body footer .ele-right {
     margin-bottom: 2vh;
   }
-  body .ele-right span {
+  body footer .ele-right span {
     text-align: left;
+  }
+  body footer .ele-left a {
+    border-left: 0px !important;
+    border-bottom: 0px !important;
+  }
+  body footer hr {
+    margin-top: 10px !important;
   }
 }
