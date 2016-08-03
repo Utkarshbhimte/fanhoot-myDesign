@@ -236,7 +236,8 @@ body #LoginModal .container .or-divider .other-hr, body #RegisterModal .containe
   display: inline-block;
   margin: 10px;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  border-color: #818181;
 }
 
 body #LoginModal .container button, body #RegisterModal .container button {
@@ -379,6 +380,9 @@ body footer .container h4 {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+  }
+  body .hero #LoginModal .container .or-divider .other-hr, body .hero #RegisterModal .container .or-divider .other-hr {
+    margin-bottom: 10px !important;
   }
   body nav ul {
     margin-left: auto;
