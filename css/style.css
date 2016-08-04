@@ -227,6 +227,7 @@ body #LoginModal .container .forgot-span:hover, body #RegisterModal .container .
 body #LoginModal .container a.btn, body #RegisterModal .container a.btn {
   background-color: #e21851;
   width: 100%;
+  transition: all .3s ease-in-out;
 }
 
 body #LoginModal .container a.btn.fb, body #RegisterModal .container a.btn.fb {
@@ -234,6 +235,10 @@ body #LoginModal .container a.btn.fb, body #RegisterModal .container a.btn.fb {
   width: 100%;
   font-size: 16px;
   margin: 1em auto;
+}
+
+body #LoginModal .container a.btn:hover, body #RegisterModal .container a.btn:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.24), 0 10px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 body #LoginModal .container .or-divider .other-hr, body #RegisterModal .container .or-divider .other-hr {
